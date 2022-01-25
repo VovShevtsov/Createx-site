@@ -1,0 +1,35 @@
+.slider-nav {
+  @include flex-v-center;
+
+  position: relative;
+  z-index: 15;
+  user-select: none;
+
+  &__btn {
+    @include flex-all-center;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    color: $gray;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 19px;
+    height: 19px;
+    color: inherit;
+    fill: currentColor;
+    object-fit: cover;
+  }
+}
+
+.slider-nav__btn.swiper-button-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

@@ -1,0 +1,22 @@
+.hero {
+  padding-top: 220px;
+  padding-bottom: 353px;
+  color: $white;
+  background-image: url(../img/hero-bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $gray;
+
+  &__content {
+    max-width: 590px;
+  }
+
+  &__btns {
+    .btn {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+  }
+}
