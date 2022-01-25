@@ -1,6 +1,22 @@
 .facts {
+  position: relative;
   padding-top: 180px;
   margin-bottom: 150px;
+  overflow: hidden;
+  background-color: $white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/facts-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: -195px;
+    left: -9px;
+    width: 570px;
+    height: 1065px;
+  }
 
   &__list {
     display: grid;
@@ -73,6 +89,8 @@
   }
 
   &__text {
+    display: block;
+    text-align: center;
     font-size: 14px;
     line-height: 1.5;
     color: $ebony;
